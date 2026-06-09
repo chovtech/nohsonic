@@ -1,0 +1,53 @@
+{
+  "colors": {
+    "primaryBlue": "#0F4C97",
+    "lightBlue": "#7CB4E8",
+    "accentBlue": "#2E86DE",
+    "white": "#FFFFFF",
+    "background": "#F7FAFF",
+    "textPrimary": "#1A1A1A",
+    "textMuted": "#6B7A90"
+  },
+
+  "typography": {
+    "headingFont": "Montserrat",
+    "bodyFont": "Open Sans",
+    "baseFontSize": "16px",
+    "scale": {
+      "h1": "32px",
+      "h2": "24px",
+      "h3": "20px",
+      "body": "16px",
+      "small": "14px"
+    }
+  },
+
+  "spacing": {
+    "xs": "4px",
+    "sm": "8px",
+    "md": "16px",
+    "lg": "24px",
+    "xl": "32px",
+    "2xl": "48px"
+  },
+
+  "radius": {
+    "sm": "6px",
+    "md": "12px",
+    "lg": "20px",
+    "full": "999px"
+  },
+
+  "shadows": {
+    "sm": "0 1px 2px rgba(0,0,0,0.05)",
+    "md": "0 4px 12px rgba(0,0,0,0.08)",
+    "lg": "0 10px 25px rgba(0,0,0,0.12)"
+  },
+
+  "statusColors": {
+    "success": "#2ECC71",
+    "warning": "#F39C12",
+    "danger": "#E74C3C",
+    "info": "#2E86DE"
+  }
+}

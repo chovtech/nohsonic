@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/chikysyd/npc.clinic/
+    - /bin/cp -R app/website/. $DEPLOYPATH

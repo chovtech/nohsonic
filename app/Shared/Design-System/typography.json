@@ -1,0 +1,37 @@
+{
+  "fonts": {
+    "heading": "Montserrat",
+    "body": "Open Sans"
+  },
+
+  "sizes": {
+    "xs": "12px",
+    "sm": "14px",
+    "md": "16px",
+    "lg": "20px",
+    "xl": "24px",
+    "2xl": "32px",
+    "3xl": "40px"
+  },
+
+  "weights": {
+    "regular": 400,
+    "medium": 500,
+    "semibold": 600,
+    "bold": 700
+  },
+
+  "lineHeight": {
+    "tight": 1.2,
+    "normal": 1.5,
+    "relaxed": 1.7
+  },
+
+  "usage": {
+    "h1": { "size": "3xl", "weight": "bold" },
+    "h2": { "size": "2xl", "weight": "bold" },
+    "h3": { "size": "xl", "weight": "semibold" },
+    "body": { "size": "md", "weight": "regular" },
+    "caption": { "size": "sm", "weight": "regular" }
+  }
+}
