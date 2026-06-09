@@ -41,17 +41,17 @@
 /************************************/	
 
 :root{
-	--primary-color			: #023047;
-	--secondary-color		: #E5EAEC;
-	--text-color			: #606778;
-	--accent-color			: #033E5B;
+	--primary-color			: #0F4C97;
+	--secondary-color		: #EEF5FF;
+	--text-color			: #6B7A90;
+	--accent-color			: #2E86DE;
 	--white-color			: #FFFFFF;
 	--black-color 			: #000000;
 	--divider-color			: #FFFFFF33;
-	--dark-divider-color	: #D4F0F533;
+	--dark-divider-color	: #7CB4E833;
 	--error-color			: rgb(230, 87, 87);
-	--default-font			: "Sora", sans-serif;
-	--accent-font			: "Marcellus", serif;
+	--default-font			: "Open Sans", sans-serif;
+	--accent-font			: "Montserrat", sans-serif;
 }
 
 /************************************/
@@ -80,7 +80,7 @@ h5,
 h6{
 	margin :0;
 	font-family: var(--accent-font);
-	font-weight: 400;
+	font-weight: 700;
 	line-height: 1.2em;
 	color: var(--primary-color);
 }
@@ -2710,7 +2710,7 @@ footer.main-footer{
 	left: 0;
 	bottom: 50px;
 	width: 55%;
-	background: linear-gradient(90deg, #10455F 9.97%, #023047 100%);
+	background: linear-gradient(90deg, #2E86DE 9.97%, #0F4C97 100%);
 	border-radius: 50px 0 0 0;
 	padding: 15px;
 	padding-left: calc(((100vw - 1300px) / 2) - 0px);
@@ -6338,7 +6338,7 @@ footer.main-footer{
 
 	.about-testimonial-box{
         width: 100%;
-		background: linear-gradient(0deg, #10455F 9.97%, #023047 100%);
+		background: linear-gradient(0deg, #2E86DE 9.97%, #0F4C97 100%);
 		border-radius: 30px 30px 0 0;
 		text-align: center;
 		padding: 20px 20px 70px;
