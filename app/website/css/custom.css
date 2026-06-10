@@ -41,7 +41,7 @@
 /************************************/	
 
 :root{
-	--primary-color			: #0F4C97;
+	--primary-color			: #034A85;
 	--secondary-color		: #EEF5FF;
 	--text-color			: #6B7A90;
 	--accent-color			: #2E86DE;
@@ -578,7 +578,7 @@ header.main-header .header-sticky.active{
 }
 
 .navbar-brand img{
-	max-height: 45px;
+	max-height: 75px;
 	width: auto;
 }
 
