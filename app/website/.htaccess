@@ -1,0 +1,6 @@
+# Disable caching during development — remove before production launch
+<FilesMatch "\.(html|css|js|png|jpg|jpeg|svg|gif|ico|woff|woff2|ttf)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+</FilesMatch>
