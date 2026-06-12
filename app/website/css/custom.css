@@ -2546,6 +2546,7 @@ footer.main-footer{
 
 .page-header-box ol .breadcrumb-item+.breadcrumb-item::before{
     color: var(--white-color);
+    content: '/';
 }
 
 .page-about-us{

@@ -2,7 +2,7 @@ Name
 NOHSONIC PHYSIOTHERAPY CLINIC
 
 Address
-9 Agadez crescent, off Aminu Kano 
+29 Agadez crescent, off Aminu Kano 
 Wuse II, Abuja
 
 Email & Web
