@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <rect width="400" height="500" fill="#EEF5FF"/>
+  <!-- Head -->
+  <circle cx="200" cy="155" r="72" fill="#034A85" opacity="0.2"/>
+  <!-- Body -->
+  <path d="M60,500 C60,360 130,295 200,295 C270,295 340,360 340,500 Z" fill="#034A85" opacity="0.2"/>
+  <!-- Coming soon label -->
+  <text x="200" y="470" font-family="Montserrat, sans-serif" font-size="13" fill="#034A85" opacity="0.5" text-anchor="middle" font-weight="600">Photo Coming Soon</text>
+</svg>

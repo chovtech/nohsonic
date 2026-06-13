@@ -318,3 +318,175 @@ app/website/images/services/
 ```
 
 Once images are in place, let the developer know and the service pages will be updated to point to these paths.
+
+---
+
+## Testimonial Author Photos
+
+These 4 headshots are used in the Testimonials section on the **Services listing page** (`service/index.html`).
+
+**Save location:** `app/website/images/`
+**Naming:** `author-1.png` through `author-4.png`
+**Aspect ratio:** **1:1 square**
+
+### Emeka O. — `author-1.png`
+```
+1:1 square close-up headshot portrait. A Nigerian man in his late 30s, smiling warmly and confidently at the camera. Well-groomed, wearing a neat casual shirt or polo. Clean neutral or soft blurred background. Photorealistic professional portrait photography. Natural skin tones. Warm soft lighting. No text, no watermark.
+```
+
+### Ngozi A. — `author-2.png`
+```
+1:1 square close-up headshot portrait. A Nigerian woman in her early 40s, smiling warmly at the camera. Natural hair or head wrap, wearing a smart casual top. Clean neutral or soft blurred background. Photorealistic professional portrait photography. Natural skin tones. Warm soft lighting. No text, no watermark.
+```
+
+### Chidi B. — `author-3.png`
+```
+1:1 square close-up headshot portrait. A young Nigerian man in his late 20s, athletic build, smiling energetically at the camera. Wearing a sports t-shirt or casual top. Clean neutral or soft blurred background. Photorealistic professional portrait photography. Natural skin tones. Warm soft lighting. No text, no watermark.
+```
+
+### Fatima M. — `author-4.png`
+```
+1:1 square close-up headshot portrait. A Nigerian woman in her early 30s, smiling gently at the camera. Wearing a hijab and a smart casual top. Clean neutral or soft blurred background. Photorealistic professional portrait photography. Natural skin tones. Warm soft lighting. No text, no watermark.
+```
+
+---
+
+## How It Works Section — Homepage
+
+These 4 images appear in the collage layout on the left side of the **"How It Works"** section on the homepage (`index.html`).
+
+**Save location:** `app/website/images/`
+**Naming:** `how-work-img-1.png` through `how-work-img-4.png`
+
+The layout places images in two columns:
+- Left column (narrow): `how-work-img-1.png` (top) + `how-work-img-3.png` (bottom)
+- Right column (wide): `how-work-img-2.png` (top) + `how-work-img-4.png` (bottom)
+
+### `how-work-img-1.png` — Booking an appointment
+**Aspect ratio: 3:4 portrait**
+```
+3:4 portrait vertical image. A Nigerian woman sitting at a reception desk in a bright physiotherapy clinic, speaking on the phone while looking at a computer screen to schedule a patient appointment. Professional front-desk setting with a warm, welcoming atmosphere. Photorealistic professional medical photography. Modern physiotherapy clinic in Abuja Nigeria. Subtle clinic branding in the background. Warm natural lighting. No text, no watermark.
+```
+
+### `how-work-img-2.png` — Initial assessment
+**Aspect ratio: 4:3 landscape**
+```
+4:3 landscape image. A Nigerian male physiotherapist conducting an initial assessment — seated across from a Nigerian male patient, clipboard in hand, listening attentively as the patient describes their symptoms. Both in a bright clinical consultation room. Photorealistic professional medical photography. Modern physiotherapy clinic in Abuja Nigeria. Physiotherapist wearing a blue uniform with a very faint, barely visible NOHSONIC logo on the chest. Warm natural lighting. No text, no watermark.
+```
+
+### `how-work-img-3.png` — Hands-on treatment
+**Aspect ratio: 3:4 portrait**
+```
+3:4 portrait vertical image. A Nigerian female physiotherapist performing hands-on manual therapy on the shoulder of a Nigerian male patient seated on a treatment plinth. Close and precise therapeutic contact. Photorealistic professional medical photography. Modern physiotherapy clinic in Abuja Nigeria. Physiotherapist wearing a blue uniform with a very faint, barely visible NOHSONIC logo on the chest. Warm natural lighting. No text, no watermark.
+```
+
+### `how-work-img-4.png` — Progress and recovery
+**Aspect ratio: 4:3 landscape**
+```
+4:3 landscape image. A Nigerian male physiotherapist reviewing a progress chart on a tablet with a smiling Nigerian woman patient who is standing confidently and moving her arm freely. Sense of achievement and recovery. Photorealistic professional medical photography. Modern physiotherapy clinic in Abuja Nigeria. Physiotherapist wearing a blue uniform with a very faint, barely visible NOHSONIC logo on the chest. Warm natural lighting. No text, no watermark.
+```
+
+---
+
+## Body Map Figure — Homepage
+
+This is the central body figure used in the **"Where Does It Hurt?"** interactive section on the homepage. Hotspot markers will be placed over this image in the browser, so the image itself must have **no labels, no text, no markers**.
+
+**Save location:** `app/website/images/`
+**Filename:** `body-map-figure.png`
+**Aspect ratio:** **1:2 portrait** (e.g. 400 × 800px or 500 × 1000px)
+
+### Body figure prompt
+```
+1:2 tall portrait illustration. A stylised anatomical body map of a standing Nigerian woman in a neutral anatomical position — arms slightly away from the body, facing forward, feet slightly apart. The figure shows visible muscle definition in a teal and navy-blue colour scheme, similar to a physiotherapy body chart or medical illustration. The background is plain white or very light grey. The figure is centred and fills most of the image vertically. No clothing. No text, no labels, no numbers, no markers, no arrows, no watermark. Clean minimal medical illustration style.
+```
+
+### Important notes for hotspot alignment
+The hotspot positions in the HTML are calibrated for a figure with these approximate proportions (as % of image height from top):
+- Head centre: ~9%
+- Ear/temple: ~14%
+- Shoulders: ~22–27%
+- Chest: ~30–34%
+- Mid-torso/arms: ~43–46%
+- Pelvis: ~54%
+- Hip: ~59%
+- Knee: ~68–72%
+- Lower leg: ~79%
+- Ankle: ~87%
+
+If your generated image has significantly different proportions, the `--bm-top` and `--bm-left` values in `index.html` (inside each `.bm-hotspot` div) will need to be adjusted by eye in the browser.
+
+---
+
+## Blog Post Images
+
+These 6 images are used as the featured/hero image for each blog post. They appear on:
+- The **blog listing page** (`/blog/`) as card thumbnails
+- The **individual post page** as the full-width hero image at the top
+- The **homepage** blog section (posts 1, 2 & 4)
+
+**Save location:** `app/website/images/blog/`
+**Naming:** use the exact slug filename shown
+**Aspect ratio:** **16:9 landscape** for all 6
+
+---
+
+### `complete-guide-physiotherapy-abuja.png`
+*(Pillar article: The Complete Guide to Physiotherapy in Abuja)*
+```
+16:9 wide landscape image. A warm and welcoming view of a modern physiotherapy clinic reception in Abuja Nigeria — a smiling Nigerian receptionist at the front desk, a Nigerian patient arriving and being greeted. Bright, clean interior with blue accent décor, professional signage on the wall. Photorealistic professional photography. Warm natural lighting. No text overlay, no watermark.
+```
+
+---
+
+### `back-pain-treatment-abuja.png`
+*(Back Pain Treatment in Abuja)*
+```
+16:9 wide landscape image. A Nigerian male physiotherapist performing deep tissue massage on the lower back of a Nigerian man lying face-down on a treatment table. The physiotherapist is focused and precise, the patient looks relaxed and relieved. Bright modern physiotherapy clinic in Abuja Nigeria. Physiotherapist in blue uniform. Photorealistic professional medical photography. Warm natural lighting. No text overlay, no watermark.
+```
+
+---
+
+### `sports-injury-recovery-abuja.png`
+*(Sports Injury Recovery in Abuja)*
+```
+16:9 wide landscape image. A young Nigerian male athlete in sportswear on a rehabilitation exercise mat, doing a single-leg squat under the supervision of a Nigerian physiotherapist who is observing his form and offering guidance. Sports rehabilitation clinic, motivational atmosphere. Photorealistic professional medical photography. Warm natural lighting. No text overlay, no watermark.
+```
+
+---
+
+### `stroke-neurological-rehabilitation-abuja.png`
+*(Stroke & Neurological Rehabilitation in Abuja)*
+```
+16:9 wide landscape image. A Nigerian physiotherapist patiently guiding an elderly Nigerian man as he takes slow, careful steps along parallel bars during neurological rehabilitation. Wide shot of a bright clean rehab room in Abuja. The physiotherapist is encouraging and attentive. Photorealistic professional medical photography. Warm natural lighting. No text overlay, no watermark.
+```
+
+---
+
+### `neck-back-pain-office-workers-abuja.png`
+*(Neck & Back Pain for Office Workers in Abuja)*
+```
+16:9 wide landscape image. A Nigerian woman in business attire sitting at an office desk in Abuja, rubbing the back of her neck with a pained expression, her laptop open in front of her. Modern open-plan office environment, natural light from windows. Photorealistic professional photography. Warm natural lighting. No text overlay, no watermark.
+```
+
+---
+
+### `knee-pain-treatment-abuja.png`
+*(Knee Pain Treatment in Abuja)*
+```
+16:9 wide landscape image. A Nigerian physiotherapist carefully examining and mobilising the knee of a Nigerian woman patient seated on a treatment table, both focused and engaged. The physiotherapist is using both hands on the knee joint in a precise clinical assessment. Modern physiotherapy clinic in Abuja Nigeria, bright clean room. Photorealistic professional medical photography. Warm natural lighting. No text overlay, no watermark.
+```
+
+---
+
+### File structure for blog images
+
+```
+app/website/images/blog/
+    complete-guide-physiotherapy-abuja.png      ← 16:9
+    back-pain-treatment-abuja.png               ← 16:9
+    sports-injury-recovery-abuja.png            ← 16:9
+    stroke-neurological-rehabilitation-abuja.png ← 16:9
+    neck-back-pain-office-workers-abuja.png     ← 16:9
+    knee-pain-treatment-abuja.png               ← 16:9
+```
