@@ -100,7 +100,7 @@ include $basePath . "includes/header.php";
                         <div class="contact-info-list wow fadeInUp" data-wow-delay="0.5s">
                             <p>info@npc.clinic</p>
                             <p>09023333331 / 08131555597</p>
-                            <a href="../appointment.php" class="support-btn">book an appointment</a>
+                            <a href="../booking/" class="support-btn">book an appointment</a>
                         </div>
                         <!-- Contact Information List End -->
 
@@ -225,7 +225,7 @@ include $basePath . "includes/header.php";
 
                         <!-- Section Btn Start -->
                         <div class="section-btn">
-                            <a href="../appointment.php" class="btn-default"><span>make an appointment</span></a>
+                            <a href="../booking/" class="btn-default"><span>make an appointment</span></a>
                         </div>
                         <!-- Section Btn End -->
                     </div>

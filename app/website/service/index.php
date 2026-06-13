@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $basePath   = "../";
 $pageTitle  = 'Our Services | NOHSONIC Physiotherapy Clinic, Abuja';
 $metaDescription = 'Explore the full range of physiotherapy services at NOHSONIC Clinic, Abuja — from orthopedic rehabilitation to neurological care, sports injury, and more.';
@@ -41,7 +41,7 @@ include $basePath . "includes/header.php";
                                         <h3>Initial Consultation</h3>
                                     </div>
                                     <div class="service-process-btn">
-                                        <a href="../appointment.php"><img src="../images/arrow-long-white.svg" alt=""></a>
+                                        <a href="../booking/"><img src="../images/arrow-long-white.svg" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="service-process-footer">
@@ -59,7 +59,7 @@ include $basePath . "includes/header.php";
                                         <h3>Treatment Planning</h3>
                                     </div>
                                     <div class="service-process-btn">
-                                        <a href="../appointment.php"><img src="../images/arrow-long-white.svg" alt=""></a>
+                                        <a href="../booking/"><img src="../images/arrow-long-white.svg" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="service-process-footer">
@@ -77,7 +77,7 @@ include $basePath . "includes/header.php";
                                         <h3>Recovery and Discharge</h3>
                                     </div>
                                     <div class="service-process-btn">
-                                        <a href="../appointment.php"><img src="../images/arrow-long-white.svg" alt=""></a>
+                                        <a href="../booking/"><img src="../images/arrow-long-white.svg" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="service-process-footer">
@@ -104,7 +104,7 @@ include $basePath . "includes/header.php";
                             <p class="wow fadeInUp" data-wow-delay="0.25s">From your first call to full recovery, our structured care pathway ensures you receive the right treatment at every stage — guided by experienced physiotherapists who put your progress first.</p>
                         </div>
                         <div class="section-btn wow fadeInUp" data-wow-delay="0.5s">
-                            <a href="../appointment.php" class="btn-default"><span>Book Appointment</span></a>
+                            <a href="../booking/" class="btn-default"><span>Book Appointment</span></a>
                         </div>
                     </div>
                 </div>
@@ -545,7 +545,7 @@ include $basePath . "includes/header.php";
                 </div>
                 <div class="col-lg-7">
                     <div class="section-btn wow fadeInUp" data-wow-delay="0.25s">
-                        <a href="../appointment.php" class="btn-default"><span>Book Appointment</span></a>
+                        <a href="../booking/" class="btn-default"><span>Book Appointment</span></a>
                     </div>
                 </div>
             </div>

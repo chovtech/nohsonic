@@ -86,7 +86,7 @@ include $basePath . "includes/header.php";
 
                             <p class="wow fadeInUp">To understand the full scope of what physiotherapy can offer, <a href="../complete-guide-physiotherapy-abuja/">read our complete guide to physiotherapy in Abuja &rarr;</a></p>
 
-                            <p class="wow fadeInUp">Call us today on <strong>09023333331 / 08131555597</strong> or <a href="../../appointment.php">book your appointment</a> at NOHSONIC Physiotherapy Clinic, 29 Agadez Crescent, Wuse II, Abuja. Our neurological physiotherapy team is ready to help you or your loved one on the road to recovery.</p>
+                            <p class="wow fadeInUp">Call us today on <strong>09023333331 / 08131555597</strong> or <a href="../../booking/">book your appointment</a> at NOHSONIC Physiotherapy Clinic, 29 Agadez Crescent, Wuse II, Abuja. Our neurological physiotherapy team is ready to help you or your loved one on the road to recovery.</p>
 
                         </div>
 

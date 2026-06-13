@@ -89,7 +89,7 @@ include $basePath . "includes/header.php";
 
                             <p class="wow fadeInUp">Want to understand the full picture of physiotherapy and what it can do for you? <a href="../complete-guide-physiotherapy-abuja/">Read our complete guide to physiotherapy in Abuja &rarr;</a></p>
 
-                            <p class="wow fadeInUp">Ready to get rid of your back pain for good? Call us on <strong>09023333331 / 08131555597</strong> or <a href="../../appointment.php">book your appointment</a> online today. Our clinic is located at 29 Agadez Crescent, Wuse II, Abuja â€” and we are here to help you move freely and live without pain.</p>
+                            <p class="wow fadeInUp">Ready to get rid of your back pain for good? Call us on <strong>09023333331 / 08131555597</strong> or <a href="../../booking/">book your appointment</a> online today. Our clinic is located at 29 Agadez Crescent, Wuse II, Abuja â€” and we are here to help you move freely and live without pain.</p>
 
                         </div>
 

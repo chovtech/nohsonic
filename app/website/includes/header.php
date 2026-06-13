@@ -115,7 +115,7 @@
                             </ul>
                         </div>
                         <div class="header-btn d-inline-flex">
-                            <a href="<?= $basePath ?>appointment.php" class="btn-default"><span>Book Appointment</span></a>
+                            <a href="<?= $basePath ?>booking/" class="btn-default"><span>Book Appointment</span></a>
                         </div>
                     </div>
                     <!-- Main Menu End -->

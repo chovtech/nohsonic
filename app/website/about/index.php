@@ -101,7 +101,7 @@ include $basePath . "includes/header.php";
 
                         <!-- Page About Content Btn Start -->
                         <div class="page-about-content-btn wow fadeInUp" data-wow-delay="1.25s">
-                            <a href="../appointment.php" class="btn-default"><span>Book Appointment</span></a>
+                            <a href="../booking/" class="btn-default"><span>Book Appointment</span></a>
                         </div>
                         <!-- Page About Content Btn End -->
                     </div>
@@ -452,7 +452,7 @@ include $basePath . "includes/header.php";
                 <div class="col-lg-5">
                     <!-- Section Btn Start -->
                     <div class="section-btn wow fadeInUp">
-                        <a href="../appointment.php" class="btn-default"><span>Book Appointment</span></a>
+                        <a href="../booking/" class="btn-default"><span>Book Appointment</span></a>
                     </div>
                     <!-- Section Btn End -->
                 </div>
@@ -1062,7 +1062,7 @@ include $basePath . "includes/header.php";
 
                         <!-- Section Btn Start -->
                         <div class="section-btn wow fadeInUp" data-wow-delay="0.5s">
-                            <a href="../appointment.php" class="btn-default"><span>Book Appointment</span></a>
+                            <a href="../booking/" class="btn-default"><span>Book Appointment</span></a>
                         </div>
                         <!-- Section Btn End -->
                     </div>

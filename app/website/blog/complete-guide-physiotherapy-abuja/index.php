@@ -128,7 +128,7 @@ include $basePath . "includes/header.php";
 
                             <p class="wow fadeInUp">You do not have to keep living with pain or limiting your life because of a physical condition. NOHSONIC Physiotherapy Clinic is ready to help you recover, move better, and feel like yourself again.</p>
 
-                            <p class="wow fadeInUp">Call us on <strong>09023333331 / 08131555597</strong> or <a href="../../appointment.php">book your appointment online</a>. Our clinic is open Monday to Friday, 8amâ€“6pm, and Saturday, 8amâ€“2pm.</p>
+                            <p class="wow fadeInUp">Call us on <strong>09023333331 / 08131555597</strong> or <a href="../../booking/">book your appointment online</a>. Our clinic is open Monday to Friday, 8amâ€“6pm, and Saturday, 8amâ€“2pm.</p>
 
                         </div>
 
