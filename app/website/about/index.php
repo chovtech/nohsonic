@@ -829,7 +829,7 @@ include $basePath . "includes/header.php";
                                         <div class="testimonial-body">
                                             <div class="author-image">
                                                 <figure class="image-anime">
-                                                    <img src="../images/author-1.jpg" alt="Emeka O." loading="lazy">
+                                                    <img src="../images/author-1.png" alt="Emeka O." loading="lazy">
                                                 </figure>
                                             </div>
                                             <div class="author-content">
@@ -859,7 +859,7 @@ include $basePath . "includes/header.php";
                                         <div class="testimonial-body">
                                             <div class="author-image">
                                                 <figure class="image-anime">
-                                                    <img src="../images/author-2.jpg" alt="Ngozi A." loading="lazy">
+                                                    <img src="../images/author-2.png" alt="Ngozi A." loading="lazy">
                                                 </figure>
                                             </div>
                                             <div class="author-content">
@@ -889,7 +889,7 @@ include $basePath . "includes/header.php";
                                         <div class="testimonial-body">
                                             <div class="author-image">
                                                 <figure class="image-anime">
-                                                    <img src="../images/author-3.jpg" alt="Chidi B." loading="lazy">
+                                                    <img src="../images/author-3.png" alt="Chidi B." loading="lazy">
                                                 </figure>
                                             </div>
                                             <div class="author-content">
@@ -919,7 +919,7 @@ include $basePath . "includes/header.php";
                                         <div class="testimonial-body">
                                             <div class="author-image">
                                                 <figure class="image-anime">
-                                                    <img src="../images/author-4.jpg" alt="Fatima M." loading="lazy">
+                                                    <img src="../images/author-4.png" alt="Fatima M." loading="lazy">
                                                 </figure>
                                             </div>
                                             <div class="author-content">

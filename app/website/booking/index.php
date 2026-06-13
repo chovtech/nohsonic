@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $basePath        = "../";
 $pageTitle       = 'Book an Appointment | NOHSONIC Physiotherapy Clinic, Abuja';
 $metaDescription = 'Book your physiotherapy appointment at NOHSONIC Clinic, 29 Agadez Crescent, Wuse II, Abuja. Expert care for pain relief, rehabilitation, and movement restoration.';
@@ -138,9 +138,9 @@ include $basePath . "includes/header.php";
                     <div class="testimonial-content">
                         <!-- Section Title Start -->
                         <div class="section-title">
-                            <h3 class="wow fadeInUp">client testimonials</h3>
+                            <h3 class="wow fadeInUp">patient testimonials</h3>
                             <h2 class="text-anime-style-3" data-cursor="-opaque">What Our Patients Say</h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.25s">Real stories from real patients. Our goal is your recovery &mdash; and these are the results that keep us motivated every day.</p>
+                            <p class="wow fadeInUp" data-wow-delay="0.25s">Our patients' recoveries are our greatest measure of success. Here is what some of them have shared about their experience at NOHSONIC Physiotherapy Clinic.</p>
                         </div>
                         <!-- Section Title End -->
                     </div>
@@ -163,18 +163,18 @@ include $basePath . "includes/header.php";
                                                 <i class="fa-solid fa-star"></i>
                                             </div>
                                             <div class="testimonial-content">
-                                                <p>After my knee surgery, the team at NOHSONIC helped me regain full mobility. The personalised treatment plan and hands-on care made all the difference.</p>
+                                                <p>After my knee surgery, the team at NOHSONIC helped me regain my mobility faster than I expected. The personalised treatment plan was incredible.</p>
                                             </div>
                                         </div>
                                         <div class="testimonial-body">
                                             <div class="author-image">
                                                 <figure class="image-anime">
-                                                    <img src="../images/author-1.jpg" alt="" loading="lazy">
+                                                    <img src="../images/author-1.png" alt="" loading="lazy">
                                                 </figure>
                                             </div>
                                             <div class="author-content">
-                                                <h3>Chukwuemeka O.</h3>
-                                                <p>Abuja, FCT</p>
+                                                <h3>Emeka O.</h3>
+                                                <p>Post-surgical patient</p>
                                             </div>
                                         </div>
                                     </div>
@@ -193,18 +193,48 @@ include $basePath . "includes/header.php";
                                                 <i class="fa-solid fa-star"></i>
                                             </div>
                                             <div class="testimonial-content">
-                                                <p>I had been dealing with chronic back pain for two years. A few weeks at NOHSONIC and I was back at work without medication. Truly life-changing.</p>
+                                                <p>I had chronic lower back pain for years. After just a few sessions at NOHSONIC, the difference was unbelievable. I finally feel like myself again.</p>
                                             </div>
                                         </div>
                                         <div class="testimonial-body">
                                             <div class="author-image">
                                                 <figure class="image-anime">
-                                                    <img src="../images/author-2.jpg" alt="" loading="lazy">
+                                                    <img src="../images/author-2.png" alt="" loading="lazy">
                                                 </figure>
                                             </div>
                                             <div class="author-content">
-                                                <h3>Fatima A.</h3>
-                                                <p>Civil Servant, Abuja</p>
+                                                <h3>Ngozi A.</h3>
+                                                <p>Chronic pain patient</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Testimonial Slide End -->
+
+                                <!-- Testimonial Slide Start -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-header">
+                                            <div class="testimonial-rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <div class="testimonial-content">
+                                                <p>The sports rehab programme at NOHSONIC was a game-changer for me. After a bad ankle injury, I was back on the field within six weeks.</p>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-body">
+                                            <div class="author-image">
+                                                <figure class="image-anime">
+                                                    <img src="../images/author-3.png" alt="" loading="lazy">
+                                                </figure>
+                                            </div>
+                                            <div class="author-content">
+                                                <h3>Chidi B.</h3>
+                                                <p>Football player</p>
                                             </div>
                                         </div>
                                     </div>
@@ -229,42 +259,12 @@ include $basePath . "includes/header.php";
                                         <div class="testimonial-body">
                                             <div class="author-image">
                                                 <figure class="image-anime">
-                                                    <img src="../images/author-3.jpg" alt="" loading="lazy">
+                                                    <img src="../images/author-4.png" alt="" loading="lazy">
                                                 </figure>
                                             </div>
                                             <div class="author-content">
-                                                <h3>David I.</h3>
-                                                <p>Sports Coach, Abuja</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Testimonial Slide End -->
-
-                                <!-- Testimonial Slide Start -->
-                                <div class="swiper-slide">
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-header">
-                                            <div class="testimonial-rating">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                            <div class="testimonial-content">
-                                                <p>My mother recovered from a stroke and NOHSONIC&rsquo;s neurological rehab programme was outstanding. The team was patient, thorough, and incredibly supportive.</p>
-                                            </div>
-                                        </div>
-                                        <div class="testimonial-body">
-                                            <div class="author-image">
-                                                <figure class="image-anime">
-                                                    <img src="../images/author-4.jpg" alt="" loading="lazy">
-                                                </figure>
-                                            </div>
-                                            <div class="author-content">
-                                                <h3>Ngozi B.</h3>
-                                                <p>Wuse II, Abuja</p>
+                                                <h3>Fatima M.</h3>
+                                                <p>Orthopedic patient</p>
                                             </div>
                                         </div>
                                     </div>
