@@ -1,8 +1,26 @@
-<?php
+﻿<?php
 $basePath        = "../";
 $pageTitle       = 'Contact Us | NOHSONIC Physiotherapy Clinic, Abuja';
-$metaDescription = 'Get in touch with NOHSONIC Physiotherapy Clinic at 9 Agadez Crescent, Wuse II, Abuja. Call 09023333331 or send a message to book an appointment or ask a question.';
+$metaDescription = 'Get in touch with NOHSONIC Physiotherapy Clinic at 29 Agadez Crescent, Wuse II, Abuja. Call 09023333331 or 08131555597, or send a message to book an appointment or ask a question.';
 $activePage      = "contact";
+$extraScripts    = <<<'HTML'
+<script>
+$(function () {
+    var $form        = $('#contactForm');
+    var $btn         = $form.find('button[type="submit"]');
+    var originalHTML = $btn.html();
+
+    $form.on('submit', function () {
+        $btn.prop('disabled', true)
+            .html('<span><i class="fa-solid fa-spinner fa-spin" style="margin-right:6px;"></i>sending...</span>');
+    });
+
+    new MutationObserver(function () {
+        $btn.prop('disabled', false).html(originalHTML);
+    }).observe(document.getElementById('msgSubmit'), { childList: true, subtree: true });
+});
+</script>
+HTML;
 
 $formStatus  = '';
 $formMessage = '';
@@ -30,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $formMessage = 'Thank you! Your message has been sent. We&rsquo;ll be in touch within 1 business day.';
         } else {
             $formStatus  = 'error';
-            $formMessage = 'Sorry, there was a problem sending your message. Please call us on 09023333331 or email <a href="mailto:info@npc.clinic">info@npc.clinic</a> directly.';
+            $formMessage = 'Sorry, there was a problem sending your message. Please call us on 09023333331 or 08131555597 or email <a href="mailto:info@npc.clinic">info@npc.clinic</a> directly.';
         }
     } else {
         $formStatus  = 'error';
@@ -81,7 +99,7 @@ include $basePath . "includes/header.php";
                         <!-- Contact Information List Start -->
                         <div class="contact-info-list wow fadeInUp" data-wow-delay="0.5s">
                             <p>info@npc.clinic</p>
-                            <p>09023333331</p>
+                            <p>09023333331 / 08131555597</p>
                             <a href="../appointment.php" class="support-btn">book an appointment</a>
                         </div>
                         <!-- Contact Information List End -->
@@ -93,7 +111,7 @@ include $basePath . "includes/header.php";
                                 </div>
                                 <div class="contact-info-content">
                                     <h3>Wuse II, Abuja</h3>
-                                    <p>9 Agadez Crescent, Wuse II, Abuja, FCT, Nigeria</p>
+                                    <p>29 Agadez Crescent, Wuse II, Abuja, FCT, Nigeria</p>
                                 </div>
                             </div>
 
@@ -181,7 +199,7 @@ include $basePath . "includes/header.php";
                 <div class="col-lg-12">
                     <!-- Google Map Iframe Start -->
                     <div class="google-map-iframe">
-                        <iframe src="https://maps.google.com/maps?q=9+Agadez+Crescent,+Wuse+II,+Abuja,+Nigeria&hl=en&z=15&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://maps.google.com/maps?q=29+Agadez+Crescent,+Wuse+II,+Abuja,+Nigeria&hl=en&z=15&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <!-- Google Map Iframe End -->
                 </div>
@@ -228,7 +246,7 @@ include $basePath . "includes/header.php";
                                 </h2>
                                 <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordion">
                                     <div class="accordion-body">
-                                        <p>You can book by calling 09023333331, emailing info@npc.clinic, or using the contact form on this page. We will confirm your appointment within 1 business day.</p>
+                                        <p>You can book by calling 09023333331 or 08131555597, emailing info@npc.clinic, or using the contact form on this page. We will confirm your appointment within 1 business day.</p>
                                     </div>
                                 </div>
                             </div>

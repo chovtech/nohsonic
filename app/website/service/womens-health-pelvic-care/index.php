@@ -67,7 +67,7 @@ include $basePath . "includes/header.php";
                                 <li><a href="#">Mon - Fri: 10:00AM - 6:00PM</a></li>
                                 <li><a href="#">Sat: 10:00AM - 3:00PM</a></li>
                                 <li><a href="#">Sun: Closed</a></li>
-                                <li><a href="#">Emergency: Call 09023333331</a></li>
+                                <li><a href="#">Emergency: Call 09023333331 / 08131555597</a></li>
                             </ul>
                             <div class="working-hours-btn">
                                 <a href="../../appointment.php" class="btn-default"><span>Book Appointment</span></a>
@@ -94,7 +94,7 @@ include $basePath . "includes/header.php";
                                 </div>
                                 <div class="sidebar-cta-content">
                                     <h3>Need Help? Call Here</h3>
-                                    <p>09023333331</p>
+                                    <p>09023333331 / 08131555597</p>
                                 </div>
                             </div>
                             <!-- Sidebar Cta Item End -->

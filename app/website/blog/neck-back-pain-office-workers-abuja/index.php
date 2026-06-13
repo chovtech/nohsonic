@@ -89,7 +89,7 @@ include $basePath . "includes/header.php";
 
                             <p class="wow fadeInUp">For a comprehensive overview of physiotherapy and how it can help, <a href="../complete-guide-physiotherapy-abuja/">read our complete guide to physiotherapy in Abuja &rarr;</a></p>
 
-                            <p class="wow fadeInUp">Suffering from neck or back pain at your desk? Call NOHSONIC on <strong>09023333331</strong> or <a href="../../appointment.php">book your appointment</a> online. We also offer workplace ergonomics assessments for organisations in Abuja â€” speak to us about how we can help your team stay pain-free and productive. Our clinic is at 9 Agadez Crescent, Wuse II, Abuja.</p>
+                            <p class="wow fadeInUp">Suffering from neck or back pain at your desk? Call NOHSONIC on <strong>09023333331 / 08131555597</strong> or <a href="../../appointment.php">book your appointment</a> online. We also offer workplace ergonomics assessments for organisations in Abuja â€” speak to us about how we can help your team stay pain-free and productive. Our clinic is at 29 Agadez Crescent, Wuse II, Abuja.</p>
 
                         </div>
 

@@ -1,4 +1,4 @@
-    <!-- Footer Start -->
+﻿    <!-- Footer Start -->
     <footer class="main-footer bg-radius-section">
         <div class="container">
             <div class="row">
@@ -14,7 +14,7 @@
                             <div class="col-lg-8">
                                 <div class="about-footer-content">
                                     <h3>NOHSONIC Physiotherapy Clinic</h3>
-                                    <p>Precision care for movement restoration. Located at 9 Agadez Crescent, Wuse II, Abuja &mdash; serving patients across the FCT.</p>
+                                    <p>Precision care for movement restoration. Located at 29 Agadez Crescent, Wuse II, Abuja &mdash; serving patients across the FCT.</p>
                                 </div>
                             </div>
                         </div>
@@ -66,7 +66,7 @@
                             <div class="footer-contact-box">
                                 <div class="footer-info-box">
                                     <div class="icon-box"><img src="<?= $basePath ?>images/icon-phone.svg" alt=""></div>
-                                    <div class="footer-info-box-content"><p>09023333331</p></div>
+                                    <div class="footer-info-box-content"><p>09023333331 / 08131555597</p></div>
                                 </div>
                                 <div class="footer-info-box">
                                     <div class="icon-box"><img src="<?= $basePath ?>images/icon-mail.svg" alt=""></div>

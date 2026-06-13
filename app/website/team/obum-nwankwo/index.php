@@ -121,7 +121,7 @@ include $basePath . "includes/header.php";
                                 </div>
                                 <div class="member-detail-list-content">
                                     <h3>phone</h3>
-                                    <p>09023333331</p>
+                                    <p>09023333331 / 08131555597</p>
                                 </div>
                             </div>
                             <!-- Member Detail List Item End -->
@@ -257,7 +257,7 @@ include $basePath . "includes/header.php";
                             <div class="section-title">
                                 <h3 class="wow fadeInUp">opening hours</h3>
                                 <h2 class="text-anime-style-3" data-cursor="-opaque">Clinic Hours</h2>
-                                <p class="wow fadeInUp" data-wow-delay="0.25s">Visit NOHSONIC Physiotherapy Clinic at 9 Agadez Crescent, Wuse II, Abuja or call to book your appointment.</p>
+                                <p class="wow fadeInUp" data-wow-delay="0.25s">Visit NOHSONIC Physiotherapy Clinic at 29 Agadez Crescent, Wuse II, Abuja or call to book your appointment.</p>
                             </div>
                             <!-- Section Title End -->
 

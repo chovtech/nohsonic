@@ -92,7 +92,7 @@ include $basePath . "includes/header.php";
 
                                 <div class="col-lg-12">
                                     <div class="page-about-body-content wow fadeInUp" data-wow-delay="1s">
-                                        <p>Our state-of-the-art facility at 9 Agadez Crescent, Wuse II, Abuja is equipped with modern rehabilitation technology. We combine hands-on manual therapy, targeted exercise, and advanced modalities to deliver lasting recovery â€” not just temporary relief.</p>
+                                        <p>Our state-of-the-art facility at 29 Agadez Crescent, Wuse II, Abuja is equipped with modern rehabilitation technology. We combine hands-on manual therapy, targeted exercise, and advanced modalities to deliver lasting recovery â€” not just temporary relief.</p>
                                     </div>
                                 </div>
                             </div>

@@ -121,14 +121,14 @@ include $basePath . "includes/header.php";
                             </ul>
 
                             <blockquote class="wow fadeInUp">
-                                <p>At NOHSONIC Physiotherapy Clinic, located at 9 Agadez Crescent, Wuse II, Abuja, we meet every one of these standards. Our founder Dr. Obum Nwankwo established the clinic with one mission: to deliver world-class physiotherapy care that is accessible to every patient in Abuja.</p>
+                                <p>At NOHSONIC Physiotherapy Clinic, located at 29 Agadez Crescent, Wuse II, Abuja, we meet every one of these standards. Our founder Dr. Obum Nwankwo established the clinic with one mission: to deliver world-class physiotherapy care that is accessible to every patient in Abuja.</p>
                             </blockquote>
 
                             <h2 class="text-anime-style-3">Book Your Physiotherapy Appointment in Abuja Today</h2>
 
                             <p class="wow fadeInUp">You do not have to keep living with pain or limiting your life because of a physical condition. NOHSONIC Physiotherapy Clinic is ready to help you recover, move better, and feel like yourself again.</p>
 
-                            <p class="wow fadeInUp">Call us on <strong>09023333331</strong> or <a href="../../appointment.php">book your appointment online</a>. Our clinic is open Monday to Friday, 8amâ€“6pm, and Saturday, 8amâ€“2pm.</p>
+                            <p class="wow fadeInUp">Call us on <strong>09023333331 / 08131555597</strong> or <a href="../../appointment.php">book your appointment online</a>. Our clinic is open Monday to Friday, 8amâ€“6pm, and Saturday, 8amâ€“2pm.</p>
 
                         </div>
 
