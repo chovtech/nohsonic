@@ -1,89 +1,12 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your complete guide to physiotherapy in Abuja â€” what it is, who needs it, what to expect, and how to find the best physiotherapist in Abuja Nigeria.">
-    <meta name="keywords" content="physiotherapy in Abuja, physiotherapist in Abuja, physiotherapy clinic Abuja, best physiotherapy Abuja">
-    <title>The Complete Guide to Physiotherapy in Abuja | NOHSONIC</title>
-    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link href="../../css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="../../css/slicknav.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
-    <link href="../../css/all.css" rel="stylesheet" media="screen">
-    <link href="../../css/animate.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/magnific-popup.css">
-    <link rel="stylesheet" href="../../css/mousecursor.css">
-    <link href="../../css/custom.css" rel="stylesheet" media="screen">
-</head>
-<body>
+﻿<?php
+$basePath   = "../../";
+$pageTitle  = 'The Complete Guide to Physiotherapy in Abuja | NOHSONIC';
+$metaDescription = 'Your complete guide to physiotherapy in Abuja â€” what it is, who needs it, what to expect, and how to find the best physiotherapist in Abuja Nigeria.';
+$metaKeywords    = 'physiotherapy in Abuja, physiotherapist in Abuja, physiotherapy clinic Abuja, best physiotherapy Abuja';
+$activePage      = "blog";
+include $basePath . "includes/header.php";
+?>
 
-    <div class="topbar">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-9 col-md-12">
-                    <div class="topbar-contact-info">
-                        <ul>
-                            <li><a href="tel:09023333331"><img src="../../images/icon-phone.svg" alt=""> 09023333331</a></li>
-                            <li class="hide-mobile"><a href="tel:08131555597"><img src="../../images/icon-phone.svg" alt=""> 08131555597</a></li>
-                            <li><a href="mailto:info@npc.clinic"><img src="../../images/icon-mail.svg" alt=""> info@npc.clinic</a></li>
-                            <li class="hide-mobile"><a href="#"><img src="../../images/icon-location.svg" alt=""> 9 Agadez Crescent, Wuse II, Abuja</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-0">
-                    <div class="topbar-social-links">
-                        <ul>
-                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <header class="main-header">
-        <div class="header-sticky">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <a class="navbar-brand" href="../../index.html">
-                        <img src="../../images/nohsonic_logo_white1.png" alt="NOHSONIC Logo">
-                    </a>
-                    <div class="collapse navbar-collapse main-menu">
-                        <div class="nav-menu-wrapper">
-                            <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../../about/">About Us</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../../service/">Services</a></li>
-                                <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
-                                    <ul>
-                                        <li class="nav-item"><a class="nav-link" href="../">Our Blog</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="../../team/">Our Team</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="../../video-gallery.html">Video Testimonials</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="../../faqs.html">FAQ's</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="../../appointment.html">Book Appointment</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href="../../contact.html">Contact Us</a></li>
-                            </ul>
-                        </div>
-                        <div class="header-btn d-inline-flex">
-                            <a href="../../appointment.html" class="btn-default"><span>Book Appointment</span></a>
-                        </div>
-                    </div>
-                    <div class="navbar-toggle"></div>
-                </div>
-            </nav>
-            <div class="responsive-menu"></div>
-        </div>
-    </header>
 
     <div class="page-header blog-single-page-header bg-radius-section parallaxie">
         <div class="container">
@@ -205,7 +128,7 @@
 
                             <p class="wow fadeInUp">You do not have to keep living with pain or limiting your life because of a physical condition. NOHSONIC Physiotherapy Clinic is ready to help you recover, move better, and feel like yourself again.</p>
 
-                            <p class="wow fadeInUp">Call us on <strong>09023333331</strong> or <a href="../../appointment.html">book your appointment online</a>. Our clinic is open Monday to Friday, 8amâ€“6pm, and Saturday, 8amâ€“2pm.</p>
+                            <p class="wow fadeInUp">Call us on <strong>09023333331</strong> or <a href="../../appointment.php">book your appointment online</a>. Our clinic is open Monday to Friday, 8amâ€“6pm, and Saturday, 8amâ€“2pm.</p>
 
                         </div>
 
@@ -239,109 +162,4 @@
         </div>
     </div>
 
-    <footer class="main-footer bg-radius-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="about-footer">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="footer-logo"><img src="../../images/nohsonic_logo_white1.png" alt=""></div>
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="about-footer-content">
-                                    <h3>#1 Physiotherapy clinic in Abuja</h3>
-                                    <p>Expert physiotherapy care in Wuse II, Abuja. From back pain to stroke rehab â€” we help you recover fully and live pain-free.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-footer-list">
-                        <div class="footer-links quick-links">
-                            <h3>quick links</h3>
-                            <ul>
-                                <li><a href="../../about/">about us</a></li>
-                                <li><a href="../../service/">services</a></li>
-                                <li><a href="../../contact.html">contact us</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-links service-links">
-                            <h3>top articles</h3>
-                            <ul>
-                                <li><a href="../back-pain-treatment-abuja/">back pain abuja</a></li>
-                                <li><a href="../knee-pain-treatment-abuja/">knee pain abuja</a></li>
-                                <li><a href="../sports-injury-recovery-abuja/">sports injury</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-links social-links">
-                            <h3>social media</h3>
-                            <ul>
-                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-links working-links">
-                            <h3>working hours</h3>
-                            <ul>
-                                <li>mon to fri : 8:00 to 6:00</li>
-                                <li>sat : 8:00 AM to 2:00 PM</li>
-                                <li>sun : closed</li>
-                            </ul>
-                        </div>
-                        <div class="footer-links footer-contact-details">
-                            <h3>Help and Support</h3>
-                            <div class="footer-contact-box">
-                                <div class="footer-info-box">
-                                    <div class="icon-box"><img src="../../images/icon-phone.svg" alt=""></div>
-                                    <div class="footer-info-box-content"><p>09023333331</p></div>
-                                </div>
-                                <div class="footer-info-box">
-                                    <div class="icon-box"><img src="../../images/icon-mail.svg" alt=""></div>
-                                    <div class="footer-info-box-content"><p>info@npc.clinic</p></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="footer-links terms-condition-links">
-                            <div class="footer-copyright-text">
-                                <p>Copyright 2026 NOHSONIC Physiotherapy Clinic. All Rights Reserved.</p>
-                            </div>
-                            <div class="footer-terms-condition">
-                                <ul>
-                                    <li><a href="#">privacy policy</a></li>
-                                    <li><a href="#">terms and conditions</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="../../js/jquery-3.7.1.min.js"></script>
-    <script src="../../js/bootstrap.min.js"></script>
-    <script src="../../js/validator.min.js"></script>
-    <script src="../../js/jquery.slicknav.js"></script>
-    <script src="../../js/swiper-bundle.min.js"></script>
-    <script src="../../js/jquery.waypoints.min.js"></script>
-    <script src="../../js/jquery.counterup.min.js"></script>
-    <script src="../../js/jquery.magnific-popup.min.js"></script>
-    <script src="../../js/SmoothScroll.js"></script>
-    <script src="../../js/parallaxie.js"></script>
-    <script src="../../js/gsap.min.js"></script>
-    <script src="../../js/magiccursor.js"></script>
-    <script src="../../js/SplitText.js"></script>
-    <script src="../../js/ScrollTrigger.min.js"></script>
-    <script src="../../js/jquery.mb.YTPlayer.min.js"></script>
-    <script src="../../js/wow.js"></script>
-    <script src="../../js/function.js"></script>
-</body>
-</html>
-
-
-
-
-
-
+<?php include $basePath . "includes/footer.php"; ?>

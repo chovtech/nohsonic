@@ -1,132 +1,38 @@
-﻿<!DOCTYPE html>
-<html lang="zxx">
+﻿<?php
+$basePath   = "";
+$pageTitle  = 'NOHSONIC Physiotherapy Clinic — Precision Care for Movement Restoration';
+$activePage      = "home";
+$extraScripts    = '<script>
+        // Body map â€” list hover highlights corresponding dot
+        document.querySelectorAll(\'.bm-list-item\').forEach(function(item) {
+            item.addEventListener(\'mouseenter\', function() {
+                var id = this.dataset.target;
+                document.querySelectorAll(\'.bm-hotspot\').forEach(function(h) { h.classList.remove(\'bm-highlighted\'); });
+                var dot = document.querySelector(\'.bm-hotspot[data-id="\' + id + \'"]\');
+                if (dot) dot.classList.add(\'bm-highlighted\');
+                document.querySelectorAll(\'.bm-list-item\').forEach(function(i) { i.classList.remove(\'bm-list-active\'); });
+                this.classList.add(\'bm-list-active\');
+            });
+            item.addEventListener(\'mouseleave\', function() {
+                document.querySelectorAll(\'.bm-hotspot\').forEach(function(h) { h.classList.remove(\'bm-highlighted\'); });
+                this.classList.remove(\'bm-list-active\');
+            });
+        });
+        // Mobile â€” tap dot to toggle active state
+        document.querySelectorAll(\'.bm-hotspot\').forEach(function(dot) {
+            dot.addEventListener(\'click\', function(e) {
+                var isActive = this.classList.contains(\'bm-active\');
+                document.querySelectorAll(\'.bm-hotspot\').forEach(function(d) { d.classList.remove(\'bm-active\'); });
+                if (!isActive) { this.classList.add(\'bm-active\'); e.stopPropagation(); }
+            });
+        });
+        document.addEventListener(\'click\', function() {
+            document.querySelectorAll(\'.bm-hotspot\').forEach(function(d) { d.classList.remove(\'bm-active\'); });
+        });
+    </script>';
+include $basePath . "includes/header.php";
+?>
 
-<head>
-	<!-- Meta -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="author" content="Awaiken">
-	<!-- Page Title -->
-    <title>NOHSONIC Physiotherapy Clinic â€” Precision Care for Movement Restoration</title>
-	<!-- Favicon Icon -->
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-	<!-- Google Fonts Css-->
-	<link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Open+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
-	<!-- Bootstrap Css -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<!-- SlickNav Css -->
-	<link href="css/slicknav.min.css" rel="stylesheet">
-	<!-- Swiper Css -->
-	<link rel="stylesheet" href="css/swiper-bundle.min.css">
-	<!-- Font Awesome Icon Css-->
-	<link href="css/all.css" rel="stylesheet" media="screen">
-	<!-- Animated Css -->
-	<link href="css/animate.css" rel="stylesheet">
-	<!-- Magnific Popup Core Css File -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<!-- Mouse Cursor Css File -->
-	<link rel="stylesheet" href="css/mousecursor.css">
-	<!-- Main Custom Css -->
-	<link href="css/custom.css" rel="stylesheet" media="screen">
-</head>
-<body>
-
-    <!-- Preloader Start -->
-	<!-- <div class="preloader">
-		<div class="loading-container">
-			<div class="loading"></div>
-			<div id="loading-icon"><img src="images/loader.svg" alt=""></div>
-		</div>
-	</div> -->
-	<!-- Preloader End -->
-
-    <!-- Topbar Section Start -->
-    <div class="topbar">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-9 col-md-12">
-                    <!-- Topbar Contact Information Start -->
-                    <div class="topbar-contact-info">
-                        <ul>
-                            <li><a href="tel:09023333331"><img src="images/icon-phone.svg" alt=""> +23490 2333 3331</a></li>
-                            <li class="hide-mobile"><a href="tel:08131555597"><img src="images/icon-phone.svg" alt=""> 08131555597</a></li>
-                            <li><a href="#"><img src="images/icon-mail.svg" alt=""> info@npc.clinic</a></li>
-                            <li class="hide-mobile"><a href="#"><img src="images/icon-location.svg" alt=""> 9 Agadez Crescent, Wuse II, Abuja</a></li>
-                        </ul>
-                    </div>
-                    <!-- Topbar Contact Information End -->
-                </div>
-
-                <div class="col-lg-3 col-md-0">
-                    <!-- Topbar Social Links Start -->
-                    <div class="topbar-social-links">
-                        <ul>
-                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                        </ul>
-                    </div>
-                    <!-- Topbar Social Links End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar Section End -->
-
-    <!-- Header Start -->
-	<header class="main-header">
-		<div class="header-sticky">
-			<nav class="navbar navbar-expand-lg">
-				<div class="container">
-					<!-- Logo Start -->
-					<a class="navbar-brand" href="index.html">
-						<img src="images/nohsonic_logo_white1.png" alt="Logo">
-					</a>
-					<!-- Logo End -->
-
-					<!-- Main Menu Start -->
-					<div class="collapse navbar-collapse main-menu">
-                        <div class="nav-menu-wrapper">
-                            <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>                                
-                                <li class="nav-item"><a class="nav-link" href="about/">About Us</a></li>
-                                <li class="nav-item"><a class="nav-link" href="service/">Services</a></li>
-                                <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
-                                    <ul>                                        
-                                        <li class="nav-item"><a class="nav-link" href="service-single.html">Service Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="blog/">Our Blog</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="blog-single.html">Blog Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="team/">Our Team</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="team-single.html">Team Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="video-gallery.html">Video Testimonials</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="faqs.html">FAQ's</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="appointment.html">book appointment</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="404.html">404</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>                                                               
-                            </ul>
-                        </div>
-                        <!-- Letâ€™s Start Button Start -->
-                        <div class="header-btn d-inline-flex">
-                            <a href="appointment.html" class="btn-default"><span>Book Appointment</span></a>
-                        </div>
-                        <!-- Letâ€™s Start Button End -->
-					</div>
-					<!-- Main Menu End -->
-					<div class="navbar-toggle"></div>
-				</div>
-			</nav>
-			<div class="responsive-menu"></div>
-		</div>
-	</header>
-	<!-- Header End -->
 
     <!-- Hero Section Start -->
 	<div class="hero hero-video bg-radius-section">
@@ -1487,193 +1393,4 @@
     </div>
     <!-- Our Blog End -->
 
-    <!-- Footer Start -->
-    <footer class="main-footer bg-radius-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- About Footer Start -->
-                    <div class="about-footer">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <!-- Footer Logo Start -->
-                                <div class="footer-logo">
-                                    <img src="images/nohsonic_logo_white1.png" alt="">
-                                </div>
-                                <!-- Footer Logo End -->                        
-                            </div>
-
-                            <div class="col-lg-8">
-                                <!-- About Footer Content Start -->
-                                <div class="about-footer-content">
-                                    <h3>NOHSONIC Physiotherapy Clinic</h3>
-                                    <p>Precision care for movement restoration. Located at 9 Agadez Crescent, Wuse II, Abuja â€” serving patients across the FCT.</p>
-                                </div>
-                                <!-- About Footer Content End -->
-                            </div>
-                        </div>                        
-                     </div>
-                    <!-- About Footer End -->
-
-                    <!-- About Footer List Start -->
-                    <div class="about-footer-list">
-                        <!-- Footer Quick Links Start -->
-                        <div class="footer-links quick-links">
-                            <h3>quick links</h3>
-                            <ul>
-                                <li><a href="#">about us</a></li>
-                                <li><a href="#">services</a></li>
-                                <li><a href="#">contact us</a></li>
-                            </ul>
-                        </div>
-                        <!-- Footer Quick Links End -->
-
-                        <!-- Footer Quick Links Start -->
-                        <div class="footer-links service-links">
-                            <h3>more services</h3>
-                            <ul>
-                                <li><a href="#">manual therapy</a></li>
-                                <li><a href="#">chronic pain</a></li>
-                                <li><a href="#">hand therapy</a></li>
-                            </ul>
-                        </div>
-                        <!-- Footer Quick Links End -->
-
-                        <!-- Footer Quick Links Start -->
-                        <div class="footer-links social-links">
-                            <h3>social media</h3>
-                            <ul>
-                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>                                                                
-                            </ul>
-                        </div>
-                        <!-- Footer Quick Links End -->
-
-                        <!-- Footer Quick Links Start -->
-                        <div class="footer-links working-links">
-                            <h3>working hours</h3>
-                            <ul>
-                                <li>mon to fri : 10:00 to 6:00</li>
-                                <li>sat : 10:00AM to 3:00PM</li>
-                                <li>sun : closed</li>
-                            </ul>
-                        </div>
-                        <!-- Footer Quick Links End -->
-
-                        <!-- Footer Contact Details Start -->
-                        <div class="footer-links footer-contact-details">
-                            <h3>Help and Support</h3>
-                            <div class="footer-contact-box">
-                                <!-- Footer Info Box Start -->
-                                <div class="footer-info-box">
-                                    <div class="icon-box">
-                                        <img src="images/icon-phone.svg" alt="">
-                                    </div>
-                                    <div class="footer-info-box-content">
-                                        <p>09023333331</p>
-                                    </div>                                
-                                </div>
-                                <!-- Footer Info Box End -->
-
-                                <!-- Footer Info Box Start -->
-                                <div class="footer-info-box">
-                                    <div class="icon-box">
-                                        <img src="images/icon-mail.svg" alt="">
-                                    </div>
-                                    <div class="footer-info-box-content">
-                                        <p>info@npc.clinic</p>
-                                    </div>
-                                </div>
-                                <!-- Footer Info Box End -->
-                            </div>
-                        </div>
-                        <!-- Footer Contact Details End -->
-
-                        <!-- Footer Copyright Section Start -->
-                         <div class="footer-links terms-condition-links">
-                            <div class="footer-copyright-text">
-                                <p>Copyright 2026 NOHSONIC Physiotherapy Clinic. All Rights Reserved.</p>
-                            </div>
-                            <div class="footer-terms-condition">
-                                <ul>
-                                    <li><a href="#">privacy policy</a></li>
-                                    <li><a href="#">terms and conditions</a></li>
-                                </ul>
-                            </div>
-                         </div>                        
-                        <!-- Footer Copyright Section End -->
-                    </div>
-                    <!-- About Footer List End -->
-                </div>                
-            </div>
-        </div>
-    </footer>
-    <!-- Footer End -->
-
-    <!-- Jquery Library File -->
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <!-- Bootstrap js file -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Validator js file -->
-    <script src="js/validator.min.js"></script>
-    <!-- SlickNav js file -->
-    <script src="js/jquery.slicknav.js"></script>
-    <!-- Swiper js file -->
-    <script src="js/swiper-bundle.min.js"></script>
-    <!-- Counter js file -->
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <!-- Magnific js file -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <!-- SmoothScroll -->
-    <script src="js/SmoothScroll.js"></script>
-    <!-- Parallax js -->
-    <script src="js/parallaxie.js"></script>
-    <!-- MagicCursor js file -->
-    <script src="js/gsap.min.js"></script>
-    <script src="js/magiccursor.js"></script>
-    <!-- Text Effect js file -->
-    <script src="js/SplitText.js"></script>
-    <script src="js/ScrollTrigger.min.js"></script>
-    <!-- YTPlayer js File -->
-    <script src="js/jquery.mb.YTPlayer.min.js"></script>
-    <!-- Wow js file -->
-    <script src="js/wow.js"></script>
-    <!-- Main Custom js file -->
-    <script src="js/function.js"></script>
-    <script>
-        // Body map â€” list hover highlights corresponding dot
-        document.querySelectorAll('.bm-list-item').forEach(function(item) {
-            item.addEventListener('mouseenter', function() {
-                var id = this.dataset.target;
-                document.querySelectorAll('.bm-hotspot').forEach(function(h) { h.classList.remove('bm-highlighted'); });
-                var dot = document.querySelector('.bm-hotspot[data-id="' + id + '"]');
-                if (dot) dot.classList.add('bm-highlighted');
-                document.querySelectorAll('.bm-list-item').forEach(function(i) { i.classList.remove('bm-list-active'); });
-                this.classList.add('bm-list-active');
-            });
-            item.addEventListener('mouseleave', function() {
-                document.querySelectorAll('.bm-hotspot').forEach(function(h) { h.classList.remove('bm-highlighted'); });
-                this.classList.remove('bm-list-active');
-            });
-        });
-        // Mobile â€” tap dot to toggle active state
-        document.querySelectorAll('.bm-hotspot').forEach(function(dot) {
-            dot.addEventListener('click', function(e) {
-                var isActive = this.classList.contains('bm-active');
-                document.querySelectorAll('.bm-hotspot').forEach(function(d) { d.classList.remove('bm-active'); });
-                if (!isActive) { this.classList.add('bm-active'); e.stopPropagation(); }
-            });
-        });
-        document.addEventListener('click', function() {
-            document.querySelectorAll('.bm-hotspot').forEach(function(d) { d.classList.remove('bm-active'); });
-        });
-    </script>
-	<script src="../../demo.awaikenthemes.com/assets/js/theme-panel.js"></script>
-</body>
-</html>
-
-
-
+<?php include $basePath . "includes/footer.php"; ?>

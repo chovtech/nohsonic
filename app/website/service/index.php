@@ -1,87 +1,11 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services | NOHSONIC Physiotherapy Clinic, Abuja</title>
-    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="../css/slicknav.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
-    <link href="../css/all.css" rel="stylesheet" media="screen">
-    <link href="../css/animate.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/magnific-popup.css">
-    <link rel="stylesheet" href="../css/mousecursor.css">
-    <link href="../css/custom.css" rel="stylesheet" media="screen">
-</head>
-<body>
-
-    <div class="topbar">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-9 col-md-12">
-                    <div class="topbar-contact-info">
-                        <ul>
-                            <li><a href="tel:09023333331"><img src="../images/icon-phone.svg" alt=""> 09023333331</a></li>
-                            <li class="hide-mobile"><a href="tel:08131555597"><img src="../images/icon-phone.svg" alt=""> 08131555597</a></li>
-                            <li><a href="#"><img src="../images/icon-mail.svg" alt=""> info@npc.clinic</a></li>
-                            <li class="hide-mobile"><a href="#"><img src="../images/icon-location.svg" alt=""> 9 Agadez Crescent, Wuse II, Abuja</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-0">
-                    <div class="topbar-social-links">
-                        <ul>
-                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <header class="main-header">
-        <div class="header-sticky">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <a class="navbar-brand" href="../index.html">
-                        <img src="../images/nohsonic_logo_white1.png" alt="NOHSONIC Logo">
-                    </a>
-                    <div class="collapse navbar-collapse main-menu">
-                        <div class="nav-menu-wrapper">
-                            <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../about/">About Us</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../service/">Services</a></li>
-                                <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
-                                    <ul>
-                                        <li class="nav-item"><a class="nav-link" href="../blog.html">Our Blog</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="../team.html">Our Team</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="../video-gallery.html">Video Testimonials</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="../faqs.html">FAQ's</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="../appointment.html">Book Appointment</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href="../contact.html">Contact Us</a></li>
-                            </ul>
-                        </div>
-                        <div class="header-btn d-inline-flex">
-                            <a href="../appointment.html" class="btn-default"><span>Book Appointment</span></a>
-                        </div>
-                    </div>
-                    <div class="navbar-toggle"></div>
-                </div>
-            </nav>
-            <div class="responsive-menu"></div>
-        </div>
-    </header>
+<?php
+$basePath   = "../";
+$pageTitle  = 'Our Services | NOHSONIC Physiotherapy Clinic, Abuja';
+$metaDescription = 'Explore the full range of physiotherapy services at NOHSONIC Clinic, Abuja — from orthopedic rehabilitation to neurological care, sports injury, and more.';
+$metaKeywords    = 'physiotherapy services Abuja, rehabilitation Abuja, NOHSONIC services, physiotherapy clinic Abuja';
+$activePage      = "service";
+include $basePath . "includes/header.php";
+?>
 
     <div class="page-header service-page-header bg-radius-section parallaxie">
         <div class="container">
@@ -91,7 +15,7 @@
                         <h1 class="text-anime-style-2" data-cursor="-opaque">Our Services</h1>
                         <nav class="wow fadeInUp">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="../index.html">home</a></li>
+                                <li class="breadcrumb-item"><a href="../">home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">services</li>
                             </ol>
                         </nav>
@@ -106,7 +30,6 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-4 col-md-6 order-lg-1 order-md-2 order-3">
-                    <!-- Service Process List Start -->
                     <div class="service-process-list">
                         <div class="service-process-list-item wow fadeInUp">
                             <div class="icon-box">
@@ -118,7 +41,7 @@
                                         <h3>Initial Consultation</h3>
                                     </div>
                                     <div class="service-process-btn">
-                                        <a href="../appointment.html"><img src="../images/arrow-long-white.svg" alt=""></a>
+                                        <a href="../appointment.php"><img src="../images/arrow-long-white.svg" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="service-process-footer">
@@ -136,7 +59,7 @@
                                         <h3>Treatment Planning</h3>
                                     </div>
                                     <div class="service-process-btn">
-                                        <a href="../appointment.html"><img src="../images/arrow-long-white.svg" alt=""></a>
+                                        <a href="../appointment.php"><img src="../images/arrow-long-white.svg" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="service-process-footer">
@@ -154,7 +77,7 @@
                                         <h3>Recovery and Discharge</h3>
                                     </div>
                                     <div class="service-process-btn">
-                                        <a href="../appointment.html"><img src="../images/arrow-long-white.svg" alt=""></a>
+                                        <a href="../appointment.php"><img src="../images/arrow-long-white.svg" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="service-process-footer">
@@ -163,7 +86,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Service Process List End -->
                 </div>
 
                 <div class="col-lg-4 order-lg-2 order-md-3 order-2">
@@ -182,7 +104,7 @@
                             <p class="wow fadeInUp" data-wow-delay="0.25s">From your first call to full recovery, our structured care pathway ensures you receive the right treatment at every stage — guided by experienced physiotherapists who put your progress first.</p>
                         </div>
                         <div class="section-btn wow fadeInUp" data-wow-delay="0.5s">
-                            <a href="../appointment.html" class="btn-default"><span>Book Appointment</span></a>
+                            <a href="../appointment.php" class="btn-default"><span>Book Appointment</span></a>
                         </div>
                     </div>
                 </div>
@@ -203,7 +125,6 @@
                 </div>
             </div>
             <div class="row">
-                
                 <div class="col-lg-4 col-md-6">
                     <div class="service-item wow fadeInUp">
                         <div class="service-item-image">
@@ -624,7 +545,7 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="section-btn wow fadeInUp" data-wow-delay="0.25s">
-                        <a href="../appointment.html" class="btn-default"><span>Book Appointment</span></a>
+                        <a href="../appointment.php" class="btn-default"><span>Book Appointment</span></a>
                     </div>
                 </div>
             </div>
@@ -694,108 +615,4 @@
     </div>
     <!-- Care Rehabilitation Section End -->
 
-    <footer class="main-footer bg-radius-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="about-footer">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="footer-logo">
-                                    <img src="../images/nohsonic_logo_white1.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="about-footer-content">
-                                    <h3>NOHSONIC Physiotherapy Clinic</h3>
-                                    <p>Precision care for movement restoration. Located at 9 Agadez Crescent, Wuse II, Abuja.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-footer-list">
-                        <div class="footer-links quick-links">
-                            <h3>quick links</h3>
-                            <ul>
-                                <li><a href="../about/">about us</a></li>
-                                <li><a href="../service/">services</a></li>
-                                <li><a href="../contact.html">contact us</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-links service-links">
-                            <h3>our services</h3>
-                            <ul>
-                                <li><a href="../service/orthopedic-rehabilitation/">Orthopedic Rehab</a></li>
-                                <li><a href="../service/sports-injury-rehabilitation/">Sports Injury</a></li>
-                                <li><a href="../service/chronic-pain-management/">Chronic Pain</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-links social-links">
-                            <h3>social media</h3>
-                            <ul>
-                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-links working-links">
-                            <h3>working hours</h3>
-                            <ul>
-                                <li>Mon to Fri: 10:00AM - 6:00PM</li>
-                                <li>Sat: 10:00AM - 3:00PM</li>
-                                <li>Sun: Closed</li>
-                            </ul>
-                        </div>
-                        <div class="footer-links footer-contact-details">
-                            <h3>Help and Support</h3>
-                            <div class="footer-contact-box">
-                                <div class="footer-info-box">
-                                    <div class="icon-box"><img src="../images/icon-phone.svg" alt=""></div>
-                                    <div class="footer-info-box-content"><p>09023333331</p></div>
-                                </div>
-                                <div class="footer-info-box">
-                                    <div class="icon-box"><img src="../images/icon-mail.svg" alt=""></div>
-                                    <div class="footer-info-box-content"><p>info@npc.clinic</p></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="footer-links terms-condition-links">
-                            <div class="footer-copyright-text">
-                                <p>Copyright 2026 NOHSONIC Physiotherapy Clinic. All Rights Reserved.</p>
-                            </div>
-                            <div class="footer-terms-condition">
-                                <ul>
-                                    <li><a href="#">privacy policy</a></li>
-                                    <li><a href="#">terms and conditions</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="../js/jquery-3.7.1.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/validator.min.js"></script>
-    <script src="../js/jquery.slicknav.js"></script>
-    <script src="../js/swiper-bundle.min.js"></script>
-    <script src="../js/jquery.waypoints.min.js"></script>
-    <script src="../js/jquery.counterup.min.js"></script>
-    <script src="../js/jquery.magnific-popup.min.js"></script>
-    <script src="../js/SmoothScroll.js"></script>
-    <script src="../js/parallaxie.js"></script>
-    <script src="../js/gsap.min.js"></script>
-    <script src="../js/magiccursor.js"></script>
-    <script src="../js/SplitText.js"></script>
-    <script src="../js/ScrollTrigger.min.js"></script>
-    <script src="../js/jquery.mb.YTPlayer.min.js"></script>
-    <script src="../js/wow.js"></script>
-    <script src="../js/function.js"></script>
-</body>
-</html>
-
-
-
+<?php include $basePath . "includes/footer.php"; ?>
