@@ -94,6 +94,12 @@
     </footer>
     <!-- Footer End -->
 
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/2349023333331" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+        <span class="wa-label">Chat with us</span>
+        <span class="wa-icon"><i class="fa-brands fa-whatsapp"></i></span>
+    </a>
+
     <!-- Scripts -->
     <script src="<?= $basePath ?>js/jquery-3.7.1.min.js"></script>
     <script src="<?= $basePath ?>js/bootstrap.min.js"></script>
