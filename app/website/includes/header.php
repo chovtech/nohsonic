@@ -33,6 +33,14 @@ $_ogDesc  = $metaDescription ?? 'Professional physiotherapy services in Wuse II,
     <meta name="twitter:title" content="<?= htmlspecialchars($_ogTitle) ?>">
     <meta name="twitter:description" content="<?= htmlspecialchars($_ogDesc) ?>">
     <meta name="twitter:image" content="<?= htmlspecialchars($_ogImage) ?>">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R37C7KKVQ6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-R37C7KKVQ6');
+    </script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
