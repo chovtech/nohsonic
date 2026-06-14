@@ -13,6 +13,24 @@
     <title><?= htmlspecialchars($pageTitle ?? 'NOHSONIC Physiotherapy Clinic') ?></title>
     <!-- Favicon Icon -->
     <link rel="shortcut icon" type="image/x-icon" href="<?= $basePath ?>images/favicon.png">
+    <link rel="icon" type="image/png" href="<?= $basePath ?>images/favicon.png">
+    <!-- Open Graph / Social Media -->
+<?php
+$_ogUrl   = 'https://' . ($_SERVER['HTTP_HOST'] ?? 'www.npc.clinic') . ($_SERVER['REQUEST_URI'] ?? '/');
+$_ogImage = $ogImage ?? 'https://www.npc.clinic/images/hero-bg.jpg';
+$_ogTitle = $pageTitle ?? 'NOHSONIC Physiotherapy Clinic';
+$_ogDesc  = $metaDescription ?? 'Professional physiotherapy services in Wuse II, Abuja. Book your appointment today.';
+?>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="NOHSONIC Physiotherapy Clinic">
+    <meta property="og:url" content="<?= htmlspecialchars($_ogUrl) ?>">
+    <meta property="og:title" content="<?= htmlspecialchars($_ogTitle) ?>">
+    <meta property="og:description" content="<?= htmlspecialchars($_ogDesc) ?>">
+    <meta property="og:image" content="<?= htmlspecialchars($_ogImage) ?>">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?= htmlspecialchars($_ogTitle) ?>">
+    <meta name="twitter:description" content="<?= htmlspecialchars($_ogDesc) ?>">
+    <meta name="twitter:image" content="<?= htmlspecialchars($_ogImage) ?>">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>

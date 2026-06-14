@@ -1,6 +1,11 @@
 # ─── Error Pages ──────────────────────────────────────────────────────────────
 ErrorDocument 404 /404/index.php
 
+# ─── Block leftover template HTML files ───────────────────────────────────────
+<FilesMatch "\.(html|htm)$">
+    Require all denied
+</FilesMatch>
+
 # ─── Security Headers ─────────────────────────────────────────────────────────
 <IfModule mod_headers.c>
     Header always set X-Content-Type-Options "nosniff"
