@@ -181,6 +181,14 @@
         <priority>0.6</priority>
     </url>
 
+    <!-- Branding -->
+    <url>
+        <loc>https://www.npc.clinic/branding/</loc>
+        <lastmod>2026-06-14</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
     <!-- Legal -->
     <url>
         <loc>https://www.npc.clinic/privacy-policy/</loc>
