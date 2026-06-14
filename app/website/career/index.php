@@ -4,6 +4,23 @@ $pageTitle       = 'Career Opportunities | NOHSONIC Physiotherapy Clinic, Abuja'
 $metaDescription = 'Join the NOHSONIC Physiotherapy Clinic team in Abuja. Explore open positions for physiotherapists, technicians, and admin staff and build a meaningful career in healthcare.';
 $metaKeywords    = 'physiotherapy jobs Abuja, physiotherapist vacancy Abuja, NOHSONIC careers, healthcare jobs Abuja, physiotherapy clinic jobs';
 $activePage      = "career";
+$extraScripts    = <<<'HTML'
+<script>
+(function () {
+    var applyModal = document.getElementById('applyModal');
+    if (!applyModal) return;
+    applyModal.addEventListener('show.bs.modal', function (e) {
+        var btn      = e.relatedTarget;
+        var role     = btn ? btn.getAttribute('data-role') : '';
+        var subject  = btn ? btn.getAttribute('data-subject') : '';
+        applyModal.querySelector('#applyModalRole').textContent  = role || 'this role';
+        applyModal.querySelector('#applyMailLink').href =
+            'mailto:careers@npc.clinic?subject=' + encodeURIComponent(subject || 'Application');
+    });
+}());
+</script>
+HTML;
+
 include $basePath . "includes/header.php";
 ?>
 
@@ -66,7 +83,7 @@ include $basePath . "includes/header.php";
                             </div>
                         </div>
                         <div class="job-card-footer">
-                            <a href="mailto:careers@npc.clinic?subject=Application%20-%20Physiotherapist" class="btn-default"><span>Apply Now</span></a>
+                            <button class="btn-default" data-bs-toggle="modal" data-bs-target="#applyModal" data-role="Physiotherapist" data-subject="Application – Physiotherapist"><span>Apply Now</span></button>
                         </div>
                     </div>
                 </div>
@@ -95,7 +112,7 @@ include $basePath . "includes/header.php";
                             </div>
                         </div>
                         <div class="job-card-footer">
-                            <a href="mailto:careers@npc.clinic?subject=Application%20-%20Physiotherapy%20Technician" class="btn-default"><span>Apply Now</span></a>
+                            <button class="btn-default" data-bs-toggle="modal" data-bs-target="#applyModal" data-role="Physiotherapy Technician" data-subject="Application – Physiotherapy Technician"><span>Apply Now</span></button>
                         </div>
                     </div>
                 </div>
@@ -124,7 +141,7 @@ include $basePath . "includes/header.php";
                             </div>
                         </div>
                         <div class="job-card-footer">
-                            <a href="mailto:careers@npc.clinic?subject=Application%20-%20Front%20Desk%20Officer" class="btn-default"><span>Apply Now</span></a>
+                            <button class="btn-default" data-bs-toggle="modal" data-bs-target="#applyModal" data-role="Front Desk Officer" data-subject="Application – Front Desk Officer"><span>Apply Now</span></button>
                         </div>
                     </div>
                 </div>
@@ -153,7 +170,7 @@ include $basePath . "includes/header.php";
                             </div>
                         </div>
                         <div class="job-card-footer">
-                            <a href="mailto:careers@npc.clinic?subject=Application%20-%20Intern%20Physiotherapist" class="btn-default"><span>Apply Now</span></a>
+                            <button class="btn-default" data-bs-toggle="modal" data-bs-target="#applyModal" data-role="Intern Physiotherapist" data-subject="Application – Intern Physiotherapist"><span>Apply Now</span></button>
                         </div>
                     </div>
                 </div>
@@ -257,5 +274,78 @@ include $basePath . "includes/header.php";
         </div>
     </div>
     <!-- CTA Box End -->
+
+    <!-- Apply Modal Start -->
+    <div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="border-radius:12px;border:none;overflow:hidden;">
+
+                <!-- Modal Header -->
+                <div class="modal-header" style="background:var(--primary-color);padding:24px 32px;border:none;">
+                    <div>
+                        <p style="color:rgba(255,255,255,0.7);font-size:13px;margin:0 0 4px;text-transform:uppercase;letter-spacing:1px;">career opportunity</p>
+                        <h5 class="modal-title" id="applyModalLabel" style="color:#fff;font-size:22px;font-weight:700;margin:0;">
+                            How to Apply: <span id="applyModalRole"></span>
+                        </h5>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close" style="margin-left:auto;"></button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body" style="padding:32px;">
+
+                    <p style="color:#555;margin-bottom:24px;">We review every application personally. Follow the steps below to submit yours and we will respond within <strong>5 business days</strong>.</p>
+
+                    <div style="display:flex;flex-direction:column;gap:20px;">
+
+                        <div style="display:flex;gap:16px;align-items:flex-start;">
+                            <div style="min-width:36px;height:36px;border-radius:50%;background:var(--primary-color);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;">1</div>
+                            <div>
+                                <strong style="color:var(--primary-color);">Prepare your documents</strong>
+                                <p style="color:#555;margin:4px 0 0;">Update your <strong>CV</strong> (maximum 2 pages) and write a short <strong>cover letter</strong> (1 page) explaining why you want to join NOHSONIC and how your experience makes you a great fit.</p>
+                            </div>
+                        </div>
+
+                        <div style="display:flex;gap:16px;align-items:flex-start;">
+                            <div style="min-width:36px;height:36px;border-radius:50%;background:var(--primary-color);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;">2</div>
+                            <div>
+                                <strong style="color:var(--primary-color);">Send your application by email</strong>
+                                <p style="color:#555;margin:4px 0 0;">Email your CV and cover letter to <a href="mailto:careers@npc.clinic" style="color:var(--primary-color);font-weight:600;">careers@npc.clinic</a>. Use the job title as your <strong>subject line</strong> exactly as shown above so we can route it correctly.</p>
+                            </div>
+                        </div>
+
+                        <div style="display:flex;gap:16px;align-items:flex-start;">
+                            <div style="min-width:36px;height:36px;border-radius:50%;background:var(--primary-color);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;">3</div>
+                            <div>
+                                <strong style="color:var(--primary-color);">Include your contact details</strong>
+                                <p style="color:#555;margin:4px 0 0;">Make sure your email or CV includes your <strong>full name</strong>, <strong>phone number</strong>, and the best time to reach you. For clinical roles, also mention your MRTB registration number if applicable.</p>
+                            </div>
+                        </div>
+
+                        <div style="display:flex;gap:16px;align-items:flex-start;">
+                            <div style="min-width:36px;height:36px;border-radius:50%;background:var(--primary-color);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;">4</div>
+                            <div>
+                                <strong style="color:var(--primary-color);">Wait for our response</strong>
+                                <p style="color:#555;margin:4px 0 0;">Shortlisted candidates will be contacted for a <strong>phone screening</strong> followed by a face-to-face interview. Clinical roles may include a practical assessment. We will notify all applicants of the outcome.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div style="background:#EEF5FF;border-radius:8px;padding:16px 20px;margin-top:28px;">
+                        <p style="margin:0;color:#555;font-size:14px;"><i class="fa-solid fa-circle-info" style="color:var(--primary-color);margin-right:8px;"></i>Accepted file formats: <strong>PDF or Word (.docx)</strong>. Maximum attachment size: <strong>5 MB</strong>.</p>
+                    </div>
+                </div>
+
+                <!-- Modal Footer -->
+                <div class="modal-footer" style="padding:20px 32px;border-top:1px solid #eee;justify-content:space-between;align-items:center;">
+                    <p style="margin:0;color:#999;font-size:13px;">careers@npc.clinic &nbsp;&bull;&nbsp; 09023333331 / 08131555597</p>
+                    <a id="applyMailLink" href="mailto:careers@npc.clinic" class="btn-default"><span>Open Email to Apply</span></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Apply Modal End -->
 
 <?php include $basePath . "includes/footer.php"; ?>

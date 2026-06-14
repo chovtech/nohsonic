@@ -4,6 +4,7 @@ $pageTitle  = 'The Complete Guide to Physiotherapy in Abuja | NOHSONIC';
 $metaDescription = 'Your complete guide to physiotherapy in Abuja â€” what it is, who needs it, what to expect, and how to find the best physiotherapist in Abuja Nigeria.';
 $metaKeywords    = 'physiotherapy in Abuja, physiotherapist in Abuja, physiotherapy clinic Abuja, best physiotherapy Abuja';
 $activePage      = "blog";
+$pageUrl = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 include $basePath . "includes/header.php";
 ?>
 
@@ -147,10 +148,10 @@ include $basePath . "includes/header.php";
                                 <div class="col-lg-4">
                                     <div class="post-social-sharing wow fadeInUp">
                                         <ul>
-                                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                            <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?= urlencode($pageUrl) ?>" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                            <li><a href="https://www.linkedin.com/sharing/share-offsite/?url=<?= urlencode($pageUrl) ?>" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a></li>
                                             <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                            <li><a href="https://twitter.com/intent/tweet?url=<?= urlencode($pageUrl) ?>" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>

@@ -57,7 +57,7 @@
                             <li><a href="tel:09023333331"><img src="<?= $basePath ?>images/icon-phone.svg" alt=""> +234 902 333 3331</a></li>
                             <li class="hide-mobile"><a href="tel:08131555597"><img src="<?= $basePath ?>images/icon-phone.svg" alt=""> 081 3155 5597</a></li>
                             <li><a href="mailto:info@npc.clinic"><img src="<?= $basePath ?>images/icon-mail.svg" alt=""> info@npc.clinic</a></li>
-                            <li class="hide-mobile"><a href="#"><img src="<?= $basePath ?>images/icon-location.svg" alt=""> 29 Agadez Crescent, Wuse II, Abuja</a></li>
+                            <li class="hide-mobile"><a href="<?= $basePath ?>contact/"><img src="<?= $basePath ?>images/icon-location.svg" alt=""> 29 Agadez Crescent, Wuse II, Abuja</a></li>
                         </ul>
                     </div>
                 </div>

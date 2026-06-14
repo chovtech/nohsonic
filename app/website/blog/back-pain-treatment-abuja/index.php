@@ -4,6 +4,7 @@ $pageTitle  = 'Back Pain Treatment in Abuja: How Physiotherapy Gives You Lasting
 $metaDescription = 'Suffering from back pain in Abuja? Discover how physiotherapy at NOHSONIC Clinic treats the root cause of back pain and delivers lasting relief without surgery.';
 $metaKeywords    = 'back pain treatment Abuja, low back pain physiotherapy Abuja, back pain clinic Abuja';
 $activePage      = "blog";
+$pageUrl = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 include $basePath . "includes/header.php";
 ?>
 
@@ -105,10 +106,10 @@ include $basePath . "includes/header.php";
                                 <div class="col-lg-4">
                                     <div class="post-social-sharing wow fadeInUp">
                                         <ul>
-                                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                            <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?= urlencode($pageUrl) ?>" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                            <li><a href="https://www.linkedin.com/sharing/share-offsite/?url=<?= urlencode($pageUrl) ?>" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a></li>
                                             <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                            <li><a href="https://twitter.com/intent/tweet?url=<?= urlencode($pageUrl) ?>" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>

@@ -61,8 +61,8 @@ include $basePath . "includes/header.php";
 
                         <!-- Hero Content Body Start -->
                         <div class="hero-content-body wow fadeInUp" data-wow-delay="0.5s">
-                            <a href="#" class="btn-default"><span>explore services</span></a>
-                            <a href="#" class="btn-default btn-highlighted"><span>book appointment</span></a>
+                            <a href="service/" class="btn-default"><span>explore services</span></a>
+                            <a href="booking/" class="btn-default btn-highlighted"><span>book appointment</span></a>
                         </div>
                         <!-- Hero Content Body End -->
                     </div>
@@ -206,7 +206,7 @@ include $basePath . "includes/header.php";
 
                         <!-- About Content Footer Start -->
                         <div class="about-content-footer wow fadeInUp" data-wow-delay="1.25s">
-                            <a href="#" class="btn-default"><span>book appointment</span></a>
+                            <a href="booking/" class="btn-default"><span>book appointment</span></a>
                         </div>
                         <!-- About Content Footer End -->
                     </div>
@@ -267,7 +267,7 @@ include $basePath . "includes/header.php";
                 <div class="col-lg-6">
                     <!-- Section Btn Start -->
                     <div class="section-btn wow fadeInUp">
-                        <a href="#" class="btn-default"><span>make an appointment</span></a>
+                        <a href="booking/" class="btn-default"><span>make an appointment</span></a>
                     </div>
                     <!-- Section Btn End -->
                 </div>
@@ -526,7 +526,7 @@ include $basePath . "includes/header.php";
                 <div class="col-lg-7">
                     <!-- Section Btn Start -->
                     <div class="section-btn wow fadeInUp">
-                        <a href="#" class="btn-default"><span>make an appointment</span></a>
+                        <a href="booking/" class="btn-default"><span>make an appointment</span></a>
                     </div>
                     <!-- Section Btn End -->
                 </div>
@@ -643,7 +643,7 @@ include $basePath . "includes/header.php";
     
                             <!-- Quality Treatment Footer Start -->
                             <div class="quality-treatment-footer wow fadeInUp" data-wow-delay="0.75s">
-                                <a href="#" class="btn-default"><span>make an appointment</span></a>
+                                <a href="booking/" class="btn-default"><span>make an appointment</span></a>
                             </div>
                             <!-- Quality Treatment Footer End -->
                         </div>

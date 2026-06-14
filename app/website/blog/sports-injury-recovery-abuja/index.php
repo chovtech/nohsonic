@@ -4,6 +4,7 @@ $pageTitle  = 'Sports Injury Recovery in Abuja: A Physiotherapist\'s Complete Gu
 $metaDescription = 'Injured playing sport in Abuja? NOHSONIC\'s sports injury physiotherapy programme gets you back to peak performance safely. Learn what to do after a sports injury.';
 $metaKeywords    = 'sports injury Abuja, sports physiotherapy Abuja, sports injury treatment Nigeria';
 $activePage      = "blog";
+$pageUrl = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 include $basePath . "includes/header.php";
 ?>
 
@@ -104,10 +105,10 @@ include $basePath . "includes/header.php";
                                 <div class="col-lg-4">
                                     <div class="post-social-sharing wow fadeInUp">
                                         <ul>
-                                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                            <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?= urlencode($pageUrl) ?>" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                            <li><a href="https://www.linkedin.com/sharing/share-offsite/?url=<?= urlencode($pageUrl) ?>" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a></li>
                                             <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                            <li><a href="https://twitter.com/intent/tweet?url=<?= urlencode($pageUrl) ?>" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>

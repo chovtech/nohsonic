@@ -81,8 +81,8 @@
                             </div>
                             <div class="footer-terms-condition">
                                 <ul>
-                                    <li><a href="#">privacy policy</a></li>
-                                    <li><a href="#">terms and conditions</a></li>
+                                    <li><a href="<?= $basePath ?>privacy-policy/">privacy policy</a></li>
+                                    <li><a href="<?= $basePath ?>terms-conditions/">terms and conditions</a></li>
                                 </ul>
                             </div>
                         </div>
