@@ -3,6 +3,7 @@ $basePath        = "../";
 $pageTitle       = 'Brand Assets | NOHSONIC Physiotherapy Clinic';
 $metaDescription = 'Download official NOHSONIC Physiotherapy Clinic brand assets — logos, colour palette, typography, letterhead, and brand guide.';
 $activePage      = "";
+$extraMeta       = '<meta name="robots" content="noindex, nofollow">';
 include $basePath . "includes/header.php";
 ?>
 
@@ -174,6 +175,7 @@ include $basePath . "includes/header.php";
                         <i class="fa-solid fa-palette" style="margin-right:10px;"></i>Colour Palette
                     </h4>
                 </div>
+                <?php if (file_exists(__DIR__ . '/Colors/color-palette.png')): ?>
                 <div class="col-lg-6 mb-4">
                     <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
                         <div style="background:#f8f9fa;padding:24px;display:flex;align-items:center;justify-content:center;">
@@ -188,6 +190,7 @@ include $basePath . "includes/header.php";
                         </div>
                     </div>
                 </div>
+                <?php endif; ?>
                 <div class="col-lg-6 mb-4">
                     <div style="border:1px solid #eee;border-radius:12px;padding:24px;">
                         <p style="font-weight:700;color:#222;margin-bottom:16px;font-size:14px;">Quick Reference</p>
@@ -232,6 +235,15 @@ include $basePath . "includes/header.php";
             </div>
 
             <!-- ── DIGITAL ASSETS ── -->
+            <?php
+            $digitalAssets = [
+                'Brand-Assets/favicon.ico'        => ['label' => 'Favicon',           'icon' => 'fa-image'],
+                'Brand-Assets/app-icon.png'       => ['label' => 'App Icon',          'icon' => 'fa-mobile-screen'],
+                'Brand-Assets/email-signature.png'=> ['label' => 'Email Signature',   'icon' => 'fa-envelope'],
+                'Brand-Assets/og-image.png'       => ['label' => 'Social Media Image','icon' => 'fa-share-nodes'],
+            ];
+            $availableAssets = array_filter($digitalAssets, fn($k) => file_exists(__DIR__ . '/' . $k), ARRAY_FILTER_USE_KEY);
+            ?>
             <div class="row mb-5 wow fadeInUp" data-wow-delay="0.25s">
                 <div class="col-lg-12">
                     <h4 style="color:var(--primary-color);font-weight:700;margin-bottom:24px;padding-bottom:10px;border-bottom:2px solid #EEF5FF;">
@@ -239,54 +251,32 @@ include $basePath . "includes/header.php";
                     </h4>
                 </div>
 
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
-                        <div style="background:#f8f9fa;padding:24px;display:flex;align-items:center;justify-content:center;min-height:120px;">
-                            <img src="Brand-Assets/favicon.ico" alt="Favicon" style="max-height:64px;object-fit:contain;">
-                        </div>
-                        <div style="padding:14px 16px;border-top:1px solid #eee;">
-                            <p style="margin:0 0 10px;font-weight:600;font-size:13px;color:#222;">Favicon</p>
-                            <a href="Brand-Assets/favicon.ico" download class="btn-default" style="padding:7px 14px;font-size:12px;display:inline-block;"><span>Download</span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
-                        <div style="background:#f8f9fa;padding:24px;display:flex;align-items:center;justify-content:center;min-height:120px;">
-                            <img src="Brand-Assets/app-icon.png" alt="App Icon" style="max-height:80px;object-fit:contain;">
-                        </div>
-                        <div style="padding:14px 16px;border-top:1px solid #eee;">
-                            <p style="margin:0 0 10px;font-weight:600;font-size:13px;color:#222;">App Icon</p>
-                            <a href="Brand-Assets/app-icon.png" download class="btn-default" style="padding:7px 14px;font-size:12px;display:inline-block;"><span>Download</span></a>
+                <?php if (!empty($availableAssets)): ?>
+                    <?php foreach ($availableAssets as $path => $asset): ?>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
+                            <div style="background:#f8f9fa;padding:24px;display:flex;align-items:center;justify-content:center;min-height:120px;">
+                                <?php if (str_ends_with($path, '.ico')): ?>
+                                    <i class="fa-solid <?= $asset['icon'] ?>" style="font-size:48px;color:var(--primary-color);opacity:0.4;"></i>
+                                <?php else: ?>
+                                    <img src="<?= htmlspecialchars($path) ?>" alt="<?= htmlspecialchars($asset['label']) ?>" style="max-width:100%;max-height:80px;object-fit:contain;">
+                                <?php endif; ?>
+                            </div>
+                            <div style="padding:14px 16px;border-top:1px solid #eee;">
+                                <p style="margin:0 0 10px;font-weight:600;font-size:13px;color:#222;"><?= htmlspecialchars($asset['label']) ?></p>
+                                <a href="<?= htmlspecialchars($path) ?>" download class="btn-default" style="padding:7px 14px;font-size:12px;display:inline-block;"><span>Download</span></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
-                        <div style="background:#f8f9fa;padding:24px;display:flex;align-items:center;justify-content:center;min-height:120px;">
-                            <img src="Brand-Assets/email-signature.png" alt="Email Signature" style="max-width:100%;max-height:80px;object-fit:contain;">
-                        </div>
-                        <div style="padding:14px 16px;border-top:1px solid #eee;">
-                            <p style="margin:0 0 10px;font-weight:600;font-size:13px;color:#222;">Email Signature</p>
-                            <a href="Brand-Assets/email-signature.png" download class="btn-default" style="padding:7px 14px;font-size:12px;display:inline-block;"><span>Download</span></a>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <div class="col-lg-12">
+                        <div style="border:1px dashed #ddd;border-radius:12px;padding:32px;text-align:center;color:#aaa;">
+                            <i class="fa-solid fa-clock" style="font-size:32px;margin-bottom:12px;display:block;"></i>
+                            <p style="margin:0;font-size:14px;">Digital assets will appear here once uploaded.</p>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
-                        <div style="background:#f8f9fa;padding:24px;display:flex;align-items:center;justify-content:center;min-height:120px;">
-                            <img src="Brand-Assets/og-image.png" alt="Social Media Image" style="max-width:100%;max-height:80px;object-fit:contain;">
-                        </div>
-                        <div style="padding:14px 16px;border-top:1px solid #eee;">
-                            <p style="margin:0 0 10px;font-weight:600;font-size:13px;color:#222;">Social Media Image</p>
-                            <a href="Brand-Assets/og-image.png" download class="btn-default" style="padding:7px 14px;font-size:12px;display:inline-block;"><span>Download</span></a>
-                        </div>
-                    </div>
-                </div>
-
+                <?php endif; ?>
             </div>
 
             <!-- Usage Notice -->

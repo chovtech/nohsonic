@@ -14,6 +14,7 @@
     <!-- Favicon Icon -->
     <link rel="shortcut icon" type="image/x-icon" href="<?= $basePath ?>images/favicon.png">
     <link rel="icon" type="image/png" href="<?= $basePath ?>images/favicon.png">
+<?php if (!empty($extraMeta)) echo "    " . $extraMeta . "\n"; ?>
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.npc.clinic<?= htmlspecialchars(strtok($_SERVER['REQUEST_URI'] ?? '/', '?')) ?>">
     <!-- Open Graph / Social Media -->
