@@ -14,6 +14,8 @@
     <!-- Favicon Icon -->
     <link rel="shortcut icon" type="image/x-icon" href="<?= $basePath ?>images/favicon.png">
     <link rel="icon" type="image/png" href="<?= $basePath ?>images/favicon.png">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.npc.clinic<?= htmlspecialchars(strtok($_SERVER['REQUEST_URI'] ?? '/', '?')) ?>">
     <!-- Open Graph / Social Media -->
 <?php
 $_ogUrl   = 'https://' . ($_SERVER['HTTP_HOST'] ?? 'www.npc.clinic') . ($_SERVER['REQUEST_URI'] ?? '/');
