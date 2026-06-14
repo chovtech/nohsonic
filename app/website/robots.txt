@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /includes/
+Disallow: /booking/form-appointment.php
+Disallow: /contact/form-process.php
+
+Sitemap: https://www.npc.clinic/sitemap.xml
